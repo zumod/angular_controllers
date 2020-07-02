@@ -1,4 +1,4 @@
-var app = angular.module("sumod", ["ngRoute"]);
+var app = angular.module("sumod", ["ngRoute"]); //to create route
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {

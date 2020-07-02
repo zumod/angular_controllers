@@ -7,15 +7,14 @@
 </head>
 <body>
 
-
-<div ng-controller="newController">
-
-  <input type="text" name="" id="" ng-model="name" placeholder="name"><br>
-  <input type="email" name="" id="" ng-model="email" placeholder="email"><br>
-  <input type="submit" ng-click="onClick()" value="submit">
-
-</div>
-
-
+  <form name="myForm">
+    <div ng-controller="newController">
+      <input type="text" name="" id="" ng-model="name" placeholder="name"><br>
+      <input type="email" name="myEmail" ng-model="email" placeholder="email">
+      <span ng-show="myForm.myEmail.$error.email">Not a valid e-mail address</span><br> <!--Email validation-->
+      <input type="submit" ng-click="onClick()" value="submit">
+    </div>
+  </form>
+  
 </body>
 </html>
